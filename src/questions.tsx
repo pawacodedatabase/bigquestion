@@ -1,12 +1,11 @@
 import { useNavigate } from "react-router-dom";
- // Importing heart icon
 import backgroundVideo from "./assets/her.mp4"; // Replace with your actual background video path
 
 const Question = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen bg-cover bg-center p-8 overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -29,12 +28,10 @@ const Question = () => {
           So here’s my question…
         </p>
 
-
-        <p className="text-3xl text-pink-300 mb-12 font-bold  animate__animated animate__fadeIn animate__delay-3s">
-         
+        <p className="text-3xl text-pink-300 mb-12 font-bold animate__animated animate__fadeIn animate__delay-3s">
           Will you be my girlfriend???
         </p>  
-        
+
         <div className="flex gap-3 justify-center">
           <button
             className="px-7 py-3 text-sm bg-pink-500 text-white font-semibold rounded-lg shadow-lg hover:bg-pink-400 transform transition-all duration-300 ease-in-out"

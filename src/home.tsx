@@ -25,16 +25,17 @@ const Home = () => {
         autoPlay
         loop
         muted
+        playsInline // Ensures the video plays inline on mobile devices
       ></video>
 
       {/* Dark Opacity Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
 
       {/* Confetti */}
       {showConfetti && <Confetti width={width} height={height} />}
 
       {/* Content */}
-      <div className="relative z-10 text-center">
+      <div className="relative z-20 text-center">
         <div className="flex gap-3 justify-center">
           <div>
             <h1 className="text-5xl font-semibold text-white mb-6 animate__animated animate__fadeIn animate__delay-1s">

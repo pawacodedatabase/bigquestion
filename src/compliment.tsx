@@ -7,9 +7,9 @@ const Compliments = () => {
   const compliments = [
     "Your laughter is my favorite sound.",
     "Your presence makes everything better.",
-    "Your goofy ass.",
-    "You're not only beautiful on the outside, but inside too.",
-    "Your Vibes.",
+    "Your goofy side makes me laugh.",
+    "You're beautiful both inside and out.",
+    "Your positive vibes brighten my day.",
     "I am truly lucky to know someone like you."
   ];
 
@@ -22,6 +22,7 @@ const Compliments = () => {
         autoPlay
         loop
         muted
+        playsInline
       ></video>
 
       {/* Dark Opacity Overlay */}
