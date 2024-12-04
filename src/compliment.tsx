@@ -14,10 +14,10 @@ const Compliments = () => {
   ];
 
   return (
-    <div className="relative min-h-screen bg-cover bg-center p-8 overflow-hidden">
+    <div className="relative min-h-screen bg-cover bg-center overflow-hidden">
       {/* Background Video */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
         src={backgroundVideo}
         autoPlay
         loop
@@ -25,15 +25,15 @@ const Compliments = () => {
       ></video>
 
       {/* Dark Opacity Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white max-w-4xl mx-auto pt-32 px-6">
+      <div className="relative z-20 text-center text-white max-w-4xl mx-auto pt-32 px-6">
         <h1 className="text-3xl font-semibold mb-8 animate__animated animate__fadeIn animate__delay-1s">
           What I Love About You
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {compliments.map((compliment, index) => (
             <div
               key={index}
